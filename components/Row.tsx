@@ -10,6 +10,7 @@ interface Props {
 function Row({ title, movies }: Props) {
   console.log(movies);
   return (
+  
     <div className="h-40 space-y-0.5 md:space-y-2">
       <h2
         className="w-56 cursor-pointer text-sm font-semibold text-[#e5e5e5] transition
@@ -22,6 +23,9 @@ function Row({ title, movies }: Props) {
           h-9 w-9 cursor-pointer opacity-0 transition hover:scale-125 
           group-hover:opacity-100 "
         />
+        <div>
+        
+        </div>
 
         <div
           className="flex scrollbar-hide items-center space-x-0.5 overflow-x-scroll md:space-x-2.5
@@ -36,7 +40,7 @@ function Row({ title, movies }: Props) {
           h-9 w-9 cursor-pointer opacity-0 transition hover:scale-125 
           group-hover:opacity-100  "
 
-          
+
         />
       </div>
     </div>

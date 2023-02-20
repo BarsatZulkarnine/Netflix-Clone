@@ -3,6 +3,7 @@ import Head from "next/head";
 import Banner from "../components/Banner";
 import Header from "../components/Header";
 import Row from "../components/Row";
+import useAuth from "../hooks/useauth";
 import { Movie } from "../typings";
 import requests from "../utils/request";
 
@@ -29,6 +30,8 @@ const Home = ({
   trendingNow,
 }: //products,
 Props) => {
+  const {logout,loading} = useAuth()
+  if(loading) return null
   return (
     <div
       className="relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511]

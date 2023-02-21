@@ -31,7 +31,7 @@ const Home = ({
 }: //products,
 Props) => {
   const {logout,loading} = useAuth()
-  if(loading) return null
+  if(loading) return "last commit from bd - white ppl country next!"
   return (
     <div
       className="relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511]
